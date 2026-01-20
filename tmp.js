@@ -25,7 +25,6 @@ const ruleProviders = {
   bilibili: getProv("Bilibili") 
 };
 
-// ✅ 修复：更换 CDN 源，解决 bilibili 403 Forbidden 问题
 function getProv(name) {
   return {
     type: "http",
@@ -55,10 +54,9 @@ const mergeRules = [
   // --- 🤖 AI 助手 ---
   "DOMAIN-SUFFIX,grok.com,🤖 AI助手",
   "DOMAIN-SUFFIX,x.ai,🤖 AI助手",
-  // ✅ 新增：日志中发现的 AI/代码 助手域名
   "DOMAIN-SUFFIX,opencode.ai,🤖 AI助手",
-  "DOMAIN-SUFFIX,exa.ai,🤖 AI助手",      // mcp.exa.ai
-  "DOMAIN-SUFFIX,context7.com,🤖 AI助手", // mcp.context7.com
+  "DOMAIN-SUFFIX,exa.ai,🤖 AI助手",      
+  "DOMAIN-SUFFIX,context7.com,🤖 AI助手",
   
   "RULE-SET,openai,🤖 AI助手",
   "RULE-SET,claude,🤖 AI助手",
@@ -92,7 +90,6 @@ const mergeRules = [
   // --- 漏网之鱼与开发工具 ---
   "DOMAIN-SUFFIX,github.com,🐱 GitHub",
   "DOMAIN-SUFFIX,githubusercontent.com,🐱 GitHub",
-  // ✅ 新增：日志中发现的代码搜索工具
   "DOMAIN-SUFFIX,grep.app,🐱 GitHub", 
 
   // --- 国内分流 ---
