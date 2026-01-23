@@ -52,6 +52,10 @@ const mergeRules = [
   "RULE-SET,crypto,💰 加密市场",
 
   // --- 🤖 AI 助手 ---
+  "DOMAIN-SUFFIX,githubcopilot.com,🤖 AI助手",
+  "DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com,🤖 AI助手",
+  "DOMAIN,copilot.githubusercontent.com,🤖 AI助手",   
+  
   "DOMAIN-SUFFIX,grok.com,🤖 AI助手",
   "DOMAIN-SUFFIX,x.ai,🤖 AI助手",
   "DOMAIN-SUFFIX,opencode.ai,🤖 AI助手",
